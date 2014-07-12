@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get "/" => "home#index"
-  get "/secondpage" => "home#secondpage"
+  get "/secondpage" => "home#secondpage", as: :twopage
   get "/thirdpage" => "home#thirdpage"
   get "/fourthpage" => "home#fourthpage"
   # The priority is based upon order of creation: first created -> highest priority.
